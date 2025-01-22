@@ -1,0 +1,230 @@
+{
+  "services": {
+    "generic": {
+      "parameter_to_value": "{parameter} į {value}",
+      "action_with_parameter": "{action} kartu su {parameter}"
+    },
+    "climate": {
+      "set_temperature": "nustatyti temperatūrą[ į {temperature}]",
+      "set_temperature_hvac_mode_heat": "šildymas[ į {temperature}]",
+      "set_temperature_hvac_mode_cool": "vėsinimas[ į {temperature}]",
+      "set_temperature_hvac_mode_heat_cool": "šildymas/vėsinimas[ į {temperature}]",
+      "set_temperature_hvac_mode_heat_cool_range": "šildymas/vėsinimas[ į {target_temp_low} - {target_temp_high}]",
+      "set_temperature_hvac_mode_auto": "automatinis[ to {temperature}]",
+      "set_hvac_mode": "nustatyti režimą[ į {hvac_mode}]",
+      "set_preset_mode": "numatytas režimas[ į {preset_mode}]",
+      "set_fan_mode": "nustatyti ventiliatorių[ į {fan_mode}]"
+    },
+    "cover": {
+      "close_cover": "užverti",
+      "open_cover": "atverti",
+      "set_cover_position": "nustatyti pozicija[ į {position}]",
+      "set_cover_tilt_position": "nustatyti padėtį[ į {tilt_position}]"
+    },
+    "fan": {
+      "set_speed": "nustatyti greitį[ į {speed}]",
+      "set_direction": "nustatyti kryptį[ į {direction}]",
+      "oscillate": "nustatyti lameles[ į {oscillate}]"
+    },
+    "humidifier": {
+      "set_humidity": "nustatyti drėgmę[ į {humidity}]",
+      "set_mode": "nustatyti režimą[ į {mode}]"
+    },
+    "input_number": {
+      "set_value": "pakeisti vertę[ į {value}]"
+    },
+    "input_select": {
+      "select_option": "pasirinkti[ {option}]"
+    },
+    "select": {
+      "select_option": "pasirinkti[ {option}]"
+    },
+    "light": {
+      "turn_on": "įjungti[ su {brightness} šviesumu]"
+    },
+    "media_player": {
+      "select_source": "pasirinkti šaltinį[ {source}]"
+    },
+    "notify": {
+      "notify": "siųsti pranešimą"
+    },
+    "script": {
+      "script": "vykdyti"
+    },
+    "vacuum": {
+      "start_pause": "start / pause"
+    },
+    "water_heater": {
+      "set_operation_mode": "režimas[ į {operation_mode}]",
+      "set_away_mode": "išvykę"
+    }
+  },
+  "domains": {
+    "alarm_control_panel": "signalizacijos pultas",
+    "binary_sensor": "dvejetainis jutiklis",
+    "climate": "klimatas",
+    "cover": "uždengimai",
+    "fan": "ventiliatoriai",
+    "group": "subjektų grupės",
+    "humidifier": "drėkintuvai",
+    "input_boolean": "įvesties loginė vertė",
+    "input_number": "skaičiaus įvestis",
+    "input_select": "įvesties pasirinkimas",
+    "lawn_mower": "žoliapjovės",
+    "light": "šviesos",
+    "lock": "užraktai",
+    "media_player": "media grotuvai",
+    "notify": "pranešimai",
+    "switch": "jungikliai",
+    "vacuum": "dulkių siurbliai",
+    "water_heater": "vandens šildytuvai"
+  },
+  "ui": {
+    "components": {
+      "date": {
+        "day_types_short": {
+          "daily": "kasdiena",
+          "workdays": "darbo diena",
+          "weekend": "savaitgalis"
+        },
+        "day_types_long": {
+          "daily": "kiekvieną dieną",
+          "workdays": "darbo dienomis",
+          "weekend": "savaitgalio dienomis"
+        },
+        "days": "days",
+        "tomorrow": "rytoj",
+        "repeated_days": "kiekvieną {days}",
+        "repeated_days_except": "kasdiena išskyrus {excludedDays}",
+        "days_range": "nuo {startDay} iki {endDay}",
+        "next_week_day": "kita {weekday}"
+      },
+      "time": {
+        "absolute": "kai {time}",
+        "interval": "nuo {startTime} iki {endTime}",
+        "at_midnight": "vidurnaktį",
+        "at_noon": "vidurdienį",
+        "at_sun_event": "kai {sunEvent}"
+      }
+    },
+    "dialog": {
+      "enable_schedule": {
+        "title": "Pilnos modifikacijos",
+        "description": "Tvarkaraštis, kurį pakeitėte, šiuo metu išjungtas, ar norite jį įjungti?"
+      },
+      "confirm_delete": {
+        "title": "Pašalinti subjektą?",
+        "description": "Ar tikrai norite pašalinti šį objektą?"
+      },
+      "confirm_migrate": {
+        "title": "Atnaujinti tvarkaraštį",
+        "description": "Kai kurie nustatymai bus prarasti dėl šio pakeitimo. Ar norite tęsti?"
+      }
+    },
+    "panel": {
+      "common": {
+        "title": "Planuoklis",
+        "new_schedule": "Naujas tvarkaraštis",
+        "default_name": "Tvarkaraštis #{id}"
+      },
+      "overview": {
+        "no_entries": "Nėra elementų, kuriuos būtų galima rodyti",
+        "backend_error": "Nepavyko prisijungti prie planavimo komponento. Prieš naudojant šią kortelę, ją reikia įdiegti kaip integraciją.",
+        "excluded_items": "{number} neįtrauktas {if number is 1} elementas {else} elementai",
+        "hide_excluded": "paslepti neįtrauktus elementus",
+        "additional_tasks": "{number} daugiau {if number is 1} užduotis {else} užduotys"
+      },
+      "entity_picker": {
+        "no_groups_defined": "Nėra apibrėžtų grupių",
+        "no_group_selected": "Pirmiausia pasirinkite grupę",
+        "no_entities_for_group": "Šioje grupėje subjektų nėra",
+        "no_entity_selected": "Pirmiausia pasirinkite objektą",
+        "no_actions_for_entity": "Šiam subjektui nėra jokių veiksmų",
+        "make_scheme": "sudaryti schemą",
+        "multiple": "Keli pasirinkimai"
+      },
+      "time_picker": {
+        "no_timeslot_selected": "Pasirinkite laiko tarpą",
+        "time_scheme": "Schema",
+        "time_input_mode": "Laiko valdymo režimas"
+      },
+      "conditions": {
+        "equal_to": "yra",
+        "unequal_to": "nėra",
+        "all": "viskas",
+        "any": "betkuris",
+        "no_conditions_defined": "Nėra apibrėžtų sąlygų",
+        "track_conditions": "Iš naujo įvertinti pasikeitus sąlygoms"
+      },
+      "options": {
+        "repeat_type": "elgesys baigus",
+        "period": "periodas"
+      },
+      "card_editor": {
+        "tabs": {
+          "entities": "Subjektai",
+          "other": "Kiti"
+        },
+        "fields": {
+          "title": {
+            "heading": "Kortelės pavadinimas",
+            "options": {
+              "standard": "standartinis",
+              "hidden": "paslėptas",
+              "custom": "individualus"
+            },
+            "custom_title": "Individuali kortelė"
+          },
+          "discover_existing": {
+            "heading": "Rodyti visus tvarkaraščius",
+            "description": "Tai nustato parametrą „Atrasti esamą“. Anksčiau sukurti tvarkaraščiai bus automatiškai įtraukti į kortelę."
+          },
+          "time_step": {
+            "heading": "Laiko žingsnis",
+            "description": "Tvarkaraščių sudarymo skiriamoji geba (minutėmis)."
+          },
+          "sort_by": {
+            "heading": "Rūšiavimo parinktys",
+            "description": "Kortelėje rodomų tvarkaraščių tvarka",
+            "options": {
+              "relative_time": "Likęs laikas iki kito veiksmo",
+              "title": "Rodomas tvarkaraščio pavadinimas",
+              "state": "Rodyti aktyvius tvarkaraščius viršuje"
+            }
+          },
+          "display_format_primary": {
+            "heading": "Rodoma pirminė informacija",
+            "description": "Apžvalgoje sukonfigūruokite, kuri etiketė bus naudojama tvarkaraščiams",
+            "options": {
+              "default": "Tvarkaraščio pavadinimas",
+              "entity_action": "Užduoties santrauka"
+            }
+          },
+          "display_format_secondary": {
+            "heading": "Rodoma antrinė informacija",
+            "description": "Konfigūruokite, kokios papildomos savybės bus matomos apžvalgoje",
+            "options": {
+              "relative_time": "Likęs laikas iki kito veiksmo",
+              "time": "Sukonfigūruotas kito veiksmo laikas",
+              "days": "Pasikartojančios savaitės dienos",
+              "additional_tasks": "Papildomų užduočių skaičius"
+            }
+          },
+          "show_header_toggle": {
+            "heading": "Rodyti antraštės jungiklį",
+            "description": "Rodyti perjungimo jungiklį kortelės viršuje, kad įjungtumėte / išjungtumėte visus objektus"
+          },
+          "tags": {
+            "heading": "Žymos",
+            "description": "Naudokite žymas, kad padalintumėte tvarkaraščius kelioms kortelėms"
+          },
+          "entities": {
+            "heading": "Įtraukti subjektai",
+            "description": "Pasirinkite objektus, kuriuos norite valdyti naudodami planavimo priemonę. Galite spustelėti grupę, kad ją atidarytumėte. Atminkite, kad kai kurie objektai (pvz., jutikliai) gali būti naudojami tik sąlygoms, o ne veiksmams.",
+            "included_number": "{number}/{total} pasirinkta"
+          }
+        }
+      }
+    }
+  }
+}
